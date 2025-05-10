@@ -41,7 +41,7 @@ export default defineUserConfig({
         // 仓库所有者的仓库名
         repository: "FList",
         // github 授权 Token, process.env.xxx  xxx 是环境变量名称。可以通过设置 githubToken 环境变量来配置
-        authorizationToken: "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",
+        authorizationToken: "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",
         // 分页大小，不懂得话就当作取最新的多少个标签吧。
         per_page: 10,
       }),
