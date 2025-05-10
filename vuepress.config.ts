@@ -11,7 +11,6 @@ import { giteeReleasesFilesAnalysis } from './src/node/analysis/giteeReleasesFil
 import { githubReposAnalysis } from './src/node/analysis/githubReposAnalysis/index.js';
 import { giteeReposAnalysis } from './src/node/analysis/giteeReposAnalysis/index.js';
 
-
 /**
  * 站点配置文件，没有注释的选项如果不知道有什么作用不建议修改，有注释的选项可以根据注释修改
  * */
@@ -41,7 +40,7 @@ export default defineUserConfig({
         // 仓库所有者的仓库名
         repository: "FList",
         // github 授权 Token, process.env.xxx  xxx 是环境变量名称。可以通过设置 githubToken 环境变量来配置
-        authorizationToken: process.env.githubToken,
+        authorizationToken: `${process.env.githubTokenHead || ""}${process.env.githubToken || ""}`,
         // 分页大小，不懂得话就当作取最新的多少个标签吧。
         per_page: 10,
       }),
