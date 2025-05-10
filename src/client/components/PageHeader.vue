@@ -25,7 +25,7 @@ const siteData = useSiteData()
   text-decoration: none;
 }
 .logo-title{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--logo-color);
 }
 .left,.right{
