@@ -44,6 +44,8 @@ export default defineUserConfig({
         // 分页大小，不懂得话就当作取最新的多少个标签吧。
         per_page: 10,
       }),
+      //代理
+      downProxy:netlifyDownProxy(),
     },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
