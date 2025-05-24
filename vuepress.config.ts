@@ -47,6 +47,17 @@ export default defineUserConfig({
       //代理
       downProxy:netlifyDownProxy(),
     },
+    {
+      mountPath: "/表情包",
+      analysis: huggingFaceDatasetsAnalysis({
+        userName: "Deep-sea",
+        datasetsName: "deep",
+        branchName: "main",
+        path: "/",
+        //最大深度,如果文件夹有很多层最大递归解析多少层，默认10
+        maxDeep: 3
+      }),
+    },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
